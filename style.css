@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+}
+
+#test {
+    background-color: aqua;
+    border-radius: 15px;
+    width: 300px;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    -ms-transform: translate(-50%, -20%);
+    text-align: center;
+}
+
+#border {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 300px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+section div:first-child {
+    background-color: darkgray;
+}
+
+
+/* first way worked! */
+
+/* section.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-areas: "result result result result"
+                        "plus minus multiplication division"
+                        "seven eight nine equal"
+                        "four five six equal"
+                        "one two three equal"
+                        "zero dot AC equal";
+}
+
+section div {
+    border: 1px solid rgba(87, 87, 87, 0.349);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    grid-area: result;
+    justify-content: right;
+    background-color: darkgray;
+}
+
+#plus {
+    grid-area: plus;
+    background-color: lightblue;
+}
+
+#minus {
+    grid-area: minus;
+    background-color: lightblue;
+}
+
+#multiplication {
+    grid-area: multiplication;
+    background-color: lightblue;
+}
+
+#division {
+    grid-area: division;
+    background-color: lightblue;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#equal {
+    grid-area: equal;
+    background-color: red;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#dot {
+    grid-area: dot;
+}
+
+#AC {
+    grid-area: AC;
+} */
+
+/* second way didn't work for now! */
+
+section.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    border-radius: 15px;
+}
+
+section div {
+    border: 1px solid rgba(87, 87, 87, 0.349);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    grid-column: span 4;
+    justify-content: right;
+    /* background-color: darkgray; */
+}
+
+#plus {
+    background-color: lightblue;
+}
+
+#minus {
+    background-color: lightblue;
+}
+
+#multiplication {
+    background-color: lightblue;
+}
+
+#division {
+    background-color: lightblue;
+}
+
+#seven {
+    /* no need for span 1 as i have applied before */
+}
+
+#eight {
+    /* no need for span 1 as i have applied before */
+}
+
+#nine {
+    /* no need for span 1 as i have applied before */
+}
+
+#equal {
+    grid-row: span 4;
+    background-color: red;
+}
+
+#four {
+    /* no need for span 1 as i have applied before */
+}
+
+#five {
+    /* no need for span 1 as i have applied before */
+}
+
+#six {
+    /* no need for span 1 as i have applied before */
+}
+
+#one {
+    /* no need for span 1 as i have applied before */
+}
+
+#two {
+    /* no need for span 1 as i have applied before */
+}
+
+#three {
+    /* no need for span 1 as i have applied before */
+}
+
+#zero {
+    /* no need for span 1 as i have applied before */
+}
+
+#dot {
+    /* no need for span 1 as i have applied before */
+}
+
+#AC {
+    /* no need for span 1 as i have applied before */
+}
+
