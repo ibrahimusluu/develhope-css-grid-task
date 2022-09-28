@@ -132,7 +132,7 @@ section div {
     grid-area: AC;
 } */
 
-/* second way didn't work for now! */
+/* second way worked also! */
 
 section.grid {
     display: grid;
